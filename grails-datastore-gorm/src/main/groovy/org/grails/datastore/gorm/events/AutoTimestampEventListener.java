@@ -46,8 +46,8 @@ public class AutoTimestampEventListener extends AbstractPersistenceEventListener
     public static final String DATE_CREATED_PROPERTY = "dateCreated";
     public static final String LAST_UPDATED_PROPERTY = "lastUpdated";
 
-    protected Map<String, Boolean> entitiesWithDateCreated = new ConcurrentHashMap<String, Boolean>();
-    protected Map<String, Boolean> entitiesWithLastUpdated = new ConcurrentHashMap<String, Boolean>();
+    public Map<String, Boolean> entitiesWithDateCreated = new ConcurrentHashMap<String, Boolean>();
+    public Map<String, Boolean> entitiesWithLastUpdated = new ConcurrentHashMap<String, Boolean>();
     protected Collection<String> uninitializedEntities = new ConcurrentLinkedQueue<String>();
     
     
